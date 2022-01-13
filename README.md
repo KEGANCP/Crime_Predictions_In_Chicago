@@ -1,4 +1,7 @@
-# Crime Predictions In Chicago
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CRIMEPREDICTIONSBANNER.png" alt="HEADER"/>
+</p>
+
 
 
 Goal: Use Machine Learning to predict future crimes in certain cities/locations.
