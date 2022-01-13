@@ -1,6 +1,6 @@
 # Crime Predictions In Chicago
 
-# Final_Project
+
 Goal: Use Machine Learning to predict future crimes in certain cities/locations.
   
     NOTE: I think we should pull data from a collection of sources, either focused on the same city or on a collection of cities in a certain area.
