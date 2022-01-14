@@ -16,6 +16,8 @@ Chicago O'Hare weather Data - https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/s
 
 Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 
+Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboards/8ed0652c9b2a4bc6bf1173e6aae6add4
+
 ##Communication Protocols
 
 - Primary daily communication through use of #Group-6 Slack chat.
