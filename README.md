@@ -16,6 +16,11 @@ Chicago O'Hare weather Data - https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/s
 
 Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 
+##Communication Protocols
+
+- Primary daily communication through use of #Group-6 Slack chat.
+- Working sessions every Monday and Wednesday from 7:00p-9:00p with an additional working session on Saturday from 8:00a-10:00a.
+
 
 ## Outline of Project with tools
 
