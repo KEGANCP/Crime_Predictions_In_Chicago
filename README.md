@@ -31,21 +31,21 @@ Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 5. Visualize ML output using Tableau or JavaScript
 
 ## Roles and Members
-### Circle Role - Team Member
+### Circle Role - Austen Marden
 
  -  Segment 1: Creating a mock-up database including an ERD
  -  Segment 2: Continue to refine the analysis
  -  Segment 3: Creating a final dashboard
  -  Segment 4: Final touches on dashboard
 
-### Square Role - Team Member
+### Square Role - Kegan Propster
 
  -  Segment 1: GitHub repo and creating branches
  -  Segment 2: Refine, train and test the ML model created in segment 1
  -  Segment 3: Tie up loose ends on github
  -  Segment 4: Finalize the Readme
 
-### Triangle Role - Team Member
+### Triangle Role - Sean Farr
 
  -  Segment 1: Create a simple machine learning model
  -  Segment 2: Upscaling the project's SQL database
