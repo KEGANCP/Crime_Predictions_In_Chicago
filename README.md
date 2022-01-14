@@ -8,14 +8,14 @@ Goal: Use Machine Learning to predict future crimes in certain cities/locations.
   
     NOTE: I think we should pull data from a collection of sources, either focused on the same city or on a collection of cities in a certain area.
 
-## Prospective Datasets
-City of Gainesville - https://data.cityofgainesville.org/Public-Safety/Crime-Responses/gvua-xt9q
+## Datasets
 
 City of Chicago - https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
 
-City of Chicago - https://www.kaggle.com/chicago/chicago-crime
+Chicago O'Hare weather Data - https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00094846/detail
 
-Chicago Census data - https://www.census.gov/quickfacts/chicagocityillinois
+Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
+
 
 ## Outline of Project with tools
 
