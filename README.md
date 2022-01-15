@@ -1,18 +1,44 @@
-# Crime Predictions In Chicago
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CRIMEPREDICTIONSBANNER.png" alt="HEADER"/>
+</p>
+
+# Topic 
+Crime Predictions in Chicago based on specific weather conditions via Machine Learning.
+
+We have selected this topic to determine what correlation certain weather patterns have on violent crimes committed within Chicago. Our analysis could be useful for a wide range of purpose; from those seeking potential vacation travel to Chicago, to law enforcement better equipped to forecast violent crime within their precinct.
 
 
-Goal: Use Machine Learning to predict future crimes in certain cities/locations.
-  
-    NOTE: I think we should pull data from a collection of sources, either focused on the same city or on a collection of cities in a certain area.
 
-## Prospective Datasets
-City of Gainesville - https://data.cityofgainesville.org/Public-Safety/Crime-Responses/gvua-xt9q
+# Goal
+Our goal is to utilize Machine Learning to predict future crimes within Chicago based on specific weather conditions.
+In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
+
+[Chicago Weather Data](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/clean_weather_data.csv)
+
+[Crime Data SAMPLE](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/sample_crime_data.csv)
+
+[Logistic Regression SAMPLE](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/triangle/sample_logistic_reg.ipynb)
+
+ERD:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/crime_database_erd.png" alt="ERD"/>
+</p>
+
+
+-----
+
+## Datasets
 
 City of Chicago - https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
 
-City of Chicago - https://www.kaggle.com/chicago/chicago-crime
+Chicago O'Hare weather Data - https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00094846/detail
 
-Chicago Census data - https://www.census.gov/quickfacts/chicagocityillinois
+Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
+
+Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboards/8ed0652c9b2a4bc6bf1173e6aae6add4
+
+
+
 
 ## Outline of Project with tools
 
@@ -23,21 +49,21 @@ Chicago Census data - https://www.census.gov/quickfacts/chicagocityillinois
 5. Visualize ML output using Tableau or JavaScript
 
 ## Roles and Members
-### Circle Role - Team Member
+### Circle Role - Austen Marden
 
  -  Segment 1: Creating a mock-up database including an ERD
  -  Segment 2: Continue to refine the analysis
  -  Segment 3: Creating a final dashboard
  -  Segment 4: Final touches on dashboard
 
-### Square Role - Team Member
+### Square Role - Kegan Propster
 
  -  Segment 1: GitHub repo and creating branches
  -  Segment 2: Refine, train and test the ML model created in segment 1
  -  Segment 3: Tie up loose ends on github
  -  Segment 4: Finalize the Readme
 
-### Triangle Role - Team Member
+### Triangle Role - Sean Farr
 
  -  Segment 1: Create a simple machine learning model
  -  Segment 2: Upscaling the project's SQL database
