@@ -18,7 +18,7 @@ Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 
 Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboards/8ed0652c9b2a4bc6bf1173e6aae6add4
 
-##Communication Protocols
+## Communication Protocols
 
 - Primary daily communication through use of #Group-6 Slack chat.
 - Working sessions every Monday and Wednesday from 7:00p-9:00p with an additional working session on Saturday from 8:00a-10:00a.
