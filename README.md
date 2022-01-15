@@ -2,9 +2,20 @@
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CRIMEPREDICTIONSBANNER.png" alt="HEADER"/>
 </p>
 
+# Topic 
+Crime Predictions in Chicago based on specific weather conditions via Machine Learning.
+
+We have selected this topic to determine what correlation certain weather patterns have on violent crimes committed within Chicago. Our analysis could be useful for a wide range of purpose; from those seeking potential vacation travel to Chicago, to law enforcement better equipped to forecast violent crime within their precinct.
 
 
-Goal: Use Machine Learning to predict future crimes in certain cities/locations.
+
+# Goal
+Our goal is to utilize Machine Learning to predict future crimes within Chicago based on specific weather conditions.
+In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
+
+[Chicago Weather Data](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/clean_weather_data.csv)
+
+
   
     NOTE: I think we should pull data from a collection of sources, either focused on the same city or on a collection of cities in a certain area.
 
