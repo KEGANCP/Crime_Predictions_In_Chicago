@@ -14,6 +14,13 @@ Our goal is to utilize Machine Learning to predict future crimes within Chicago 
 In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
 
 [Chicago Weather Data](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/clean_weather_data.csv)
+[Crime Data SAMPLE](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/sample_crime_data.csv)
+[Logistic Regression SAMPLE](https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/triangle/sample_logistic_reg.ipynb)
+
+ERD:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/crime_database_erd.png" alt="ERD"/>
+</p>
 
 
   
