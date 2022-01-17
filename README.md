@@ -6,8 +6,7 @@
 Crime Predictions in Chicago based on specific weather conditions via Machine Learning.
 
 We have selected this topic to determine what correlation certain weather patterns have on violent crimes committed within Chicago. Our analysis could be useful for a wide range of purpose; from those seeking potential vacation travel to Chicago, to law enforcement better equipped to forecast violent crime within their precinct.
-
-
+This topic will allow the utilization of many data analytic tools and functions from optimizing data in Pandas and utilzing Python to initiate Machine Learning models, to providing vizualizations within Tableau & utilzing SQL to query against the database. 
 
 # Goal
 Our goal is to utilize Machine Learning to predict future crimes within Chicago based on specific weather conditions.
@@ -38,6 +37,24 @@ Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboards/8ed0652c9b2a4bc6bf1173e6aae6add4
 
 
+## Preliminary Analysis
+Prior to utilzing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/Clean_Weather_Snip.png" alt="CleanWeather"/>
+</p>
+
+There was also optimization required for our crime data set. Seeing as how this data set was very large we began by dropping columns that would not be pertinent to our research. We also needed to identify "Violent Crimes" and "Non-Violent Crimes". This was achived with the code shown below:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/Violent_V_Nonviolent.png" alt="ViolentVsNonViolent"/>
+</p>
+
+The above mentioned data cleaning allowed for some preliminary Machine Learning model tests. The below is a sample of code showing our Confusion Matrix with an accuracy score of 65%. 
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/CM.png" alt="CM"/>
+</p>
+
+
+## Communication Potocols
 
 
 ## Outline of Project with tools
@@ -69,4 +86,3 @@ Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboa
  -  Segment 2: Upscaling the project's SQL database
  -  Segment 3: Creating presentation of project
  -  Segment 4: Clean up Github repo
-
