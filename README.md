@@ -40,17 +40,17 @@ Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboa
 ## Preliminary Analysis
 Prior to utilzing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
 <p align="center">
-  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/Clean_Weather_Snip.png" alt="CleanWeather"/>
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Clean_Weather_Snip.png" alt="CleanWeather"/>
 </p>
 
 There was also optimization required for our crime data set. Seeing as how this data set was very large we began by dropping columns that would not be pertinent to our research. We also needed to identify "Violent Crimes" and "Non-Violent Crimes". This was achived with the code shown below:
 <p align="center">
-  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/Violent_V_Nonviolent.png" alt="ViolentVsNonViolent"/>
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Violent_V_Nonviolent.png" alt="ViolentVsNonViolent"/>
 </p>
 
 The above mentioned data cleaning allowed for some preliminary Machine Learning model tests. The below is a sample of code showing our Confusion Matrix with an accuracy score of 65%. 
 <p align="center">
-  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/CM.png" alt="CM"/>
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
 
 
