@@ -55,7 +55,8 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 
 
 ## Communication Potocols
-
+- Primary daily communication through use of #Group-6 Slack chat.
+- Working sessions every Monday and Wednesday from 7:00p-9:00p with an additional working session on Saturday from 8:00a-10:00a.
 
 ## Outline of Project with tools
 
