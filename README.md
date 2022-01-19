@@ -36,7 +36,6 @@ Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 
 Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboards/8ed0652c9b2a4bc6bf1173e6aae6add4
 
-
 ## Preliminary Analysis
 Prior to utilzing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
 <p align="center">
