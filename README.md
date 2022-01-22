@@ -84,5 +84,5 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 
  -  Segment 1: Create a simple machine learning model
  -  Segment 2: Upscaling the project's SQL database
- -  Segment 3: Creating presentation of project
+ -  Segment 3: Creating presentation of project https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing
  -  Segment 4: Clean up Github repo
