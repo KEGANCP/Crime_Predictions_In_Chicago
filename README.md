@@ -65,6 +65,14 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 4. Machine Learning model using Python/Jupyter Notebook/Sci-kit Learn
 5. Visualize ML output using Tableau or JavaScript
 
+## Dashboard Link
+
+https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes
+
+## Link to Google Slides
+
+https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing
+
 ## Roles and Members
 ### Circle Role - Austen Marden
 
@@ -84,5 +92,5 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 
  -  Segment 1: Create a simple machine learning model
  -  Segment 2: Upscaling the project's SQL database
- -  Segment 3: Creating presentation of project https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing
+ -  Segment 3: Creating presentation of project 
  -  Segment 4: Clean up Github repo
