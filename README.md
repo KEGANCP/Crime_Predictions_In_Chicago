@@ -65,7 +65,7 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 4. Machine Learning model using Python/Jupyter Notebook/Sci-kit Learn
 5. Visualize ML output using Tableau or JavaScript
 
-## Dashboard Link
+## Preliminary Dashboard Link
 
 https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes
 
