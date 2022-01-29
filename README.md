@@ -52,7 +52,11 @@ ERD:
   - Create a config.py file with your PostgreSQL password.
   - Change the read_CSV file pathways to match your file locations.
 - Run the chicago_crime_queries.sql file in PostgreSQL to create the joined table for futher analysis and machine learning.
-- INSERT MACHINE LEARNING STEPS
+- For Machine Learning:
+  - verify that your Python environment has sklearn loaded in it
+  - make sure PostgreSQL is running and "chicago_crime" database is connected
+  - open up "Random_Forest.ipynb" file in Jupyter Notebook
+  - click on "Kernel" tab and select "Restart & Run All"
 - INSERT DASHBOARD STEPS
 - INSERT TABLEAU STEPS
 
