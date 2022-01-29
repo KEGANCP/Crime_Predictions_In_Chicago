@@ -24,17 +24,52 @@ ERD:
 </p>
 
 
+
+-----
+
+## Instructions
+
+### Tools Needed 
+- Anaconda
+- Jupyter Notebook
+- Python Libraries
+  - Pandas
+  - SQAlchemy
+  - Sci-Kit Learn
+  - Dash
+  - Plotly
+- PostgreSQL
+- Tableau
+
+
+### Steps to Run
+- Create a Database in PostgreSQL called "chicago_crime"
+- Download the following raw CSV data files from the datasets listed below. 
+  - "City of Chicago Crime"
+  - "Chicago O'Hare Weather Data"
+  - "Chicago Community Data"
+- Run the data_cleaner.ipynb notebook in order to clean the raw data files and load the SQL database.
+  - Create a config.py file with your PostgreSQL password.
+  - Change the read_CSV file pathways to match your file locations.
+- Run the chicago_crime_queries.sql file in PostgreSQL to create the joined table for futher analysis and machine learning.
+- INSERT MACHINE LEARNING STEPS
+- INSERT DASHBOARD STEPS
+- INSERT TABLEAU STEPS
+
+
 -----
 
 ## Datasets
 
-City of Chicago - https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
+City of Chicago Crime - https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
 
-Chicago O'Hare weather Data - https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00094846/detail
+Chicago O'Hare Weather Data - https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00094846/detail
 
 Crime Classification Codes - https://gis.chicagopolice.org/pages/crime_details
 
 Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboards/8ed0652c9b2a4bc6bf1173e6aae6add4
+
+Chicago Community Data - https://datahub.cmap.illinois.gov/dataset/community-data-snapshots-raw-data/resource/8c4e096e-c90c-4bef-9cf1-9028d094296e
 
 ## Preliminary Analysis
 Prior to utilzing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.

@@ -1,0 +1,27 @@
+-- Run the following query in order to create the chicago_crime_master table
+-- used to run our machine learning model.
+SELECT cd."ID",
+	cd."Primary_Type",
+	cd."Violence_Status",
+	cd."Description",
+	cd."Location_Description",
+	cd."Arrest",
+	cd."Community_Area",
+	cd."Latitude",
+	cd."Longitude",
+	cd."Date",
+	cd."Time",
+	wd."Average_Wind_Speed",
+	wd."Average_Temperature",
+	wd."Fog_Ice_Freezing_Fog",
+	wd."Thunder",
+	wd."Smoke_or_Haze",
+	cmd."Community_Name"
+INTO chicago_crime_master
+FROM crime_data as cd
+LEFT JOIN weather_data as wd
+ON cd."Date" = wd."Date"
+LEFT JOIN community_data as cmd
+ON cd."Community_Area" = cmd."Community_Area"
+ORDER BY cd."Date"
+;
