@@ -91,6 +91,14 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
 
+## Machine Learning
+- Preliminary data preprocessing: With the question being a yes/no (violent/Non-Violent) based on weather, we knew that we were looking at predicting discrete outcomes. Initial exploration of the data showed that there were several columns that were similar in description to each other (several types of location, etc.), so we dropped them to eliminate noise.
+- Preliminary feature engineering: For some of the columns that were in string format, pandas “get_dummies” was utilized to preprocess the data(these were later eliminated when the columns weren’t strong on feature importance and did not appear to be significant)
+- Data was split based on the “Violence_Status” column. The Target was the “Violence_Status” column, while the Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
+- Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
+- Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
+
+
 
 ## Communication Potocols
 - Primary daily communication through use of #Group-6 Slack chat.
@@ -103,6 +111,14 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 3. Database creation using SQL
 4. Machine Learning model using Python/Jupyter Notebook/Sci-kit Learn
 5. Visualize ML output using Tableau or JavaScript
+
+## Preliminary Dashboard Link
+
+https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes
+
+## Link to Google Slides
+
+https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing
 
 ## Roles and Members
 ### Circle Role - Austen Marden
@@ -123,5 +139,5 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 
  -  Segment 1: Create a simple machine learning model
  -  Segment 2: Upscaling the project's SQL database
- -  Segment 3: Creating presentation of project
+ -  Segment 3: Creating presentation of project 
  -  Segment 4: Clean up Github repo
