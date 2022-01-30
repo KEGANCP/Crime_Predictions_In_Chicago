@@ -55,9 +55,9 @@ ERD:
 - For Machine Learning:
   - verify that your Python environment has sklearn loaded in it
   - make sure PostgreSQL is running and "chicago_crime" database is connected
-  - open up "Random_Forest.ipynb" file in Jupyter Notebook
+  - open up "Random_Forest.ipynb" file in Jupyter Notebook 
   - click on "Kernel" tab and select "Restart & Run All"
-- INSERT DASHBOARD STEPS
+- INSERT DASHBOARD STEPS  
 - INSERT TABLEAU STEPS
 
 
