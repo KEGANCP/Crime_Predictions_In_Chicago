@@ -97,7 +97,7 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
   - Initial exploration of the data showed that there were several columns that were similar in description to each other (several types of location, etc.), so we dropped them to eliminate noise.
 - Preliminary feature engineering:
     - For some of the columns that were in string format, pandas “get_dummies” was utilized to preprocess the data(these were later eliminated when the columns weren’t strong on feature importance and did not appear to be significant)
-    - Nan's were replaced with 0 
+    - NaN's were replaced with 0 
 - Data was split based on the “Violence_Status” column:
     - The Target was the “Violence_Status” column
     - The Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
