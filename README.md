@@ -6,7 +6,7 @@
 Crime Predictions in Chicago based on specific weather conditions via Machine Learning.
 
 We have selected this topic to determine what correlation certain weather patterns have on violent crimes committed within Chicago. Our analysis could be useful for a wide range of purpose; from those seeking potential vacation travel to Chicago, to law enforcement better equipped to forecast violent crime within their precinct.
-This topic will allow the utilization of many data analytic tools and functions from optimizing data in Pandas and utilzing Python to initiate Machine Learning models, to providing vizualizations within Tableau & utilzing SQL to query against the database. 
+This topic will allow the utilization of many data analytic tools and functions from optimizing data in Pandas and utilizing Python to initiate Machine Learning models, to providing visualizations within Tableau & utilizing SQL to query against the database. 
 
 # Goal
 Our goal is to utilize Machine Learning to predict future crimes within Chicago based on specific weather conditions.
