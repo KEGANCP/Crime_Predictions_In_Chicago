@@ -92,9 +92,15 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 </p>
 
 ## Machine Learning
-- Preliminary data preprocessing: With the question being a yes/no (violent/Non-Violent) based on weather, we knew that we were looking at predicting discrete outcomes. Initial exploration of the data showed that there were several columns that were similar in description to each other (several types of location, etc.), so we dropped them to eliminate noise.
-- Preliminary feature engineering: For some of the columns that were in string format, pandas “get_dummies” was utilized to preprocess the data(these were later eliminated when the columns weren’t strong on feature importance and did not appear to be significant)
-- Data was split based on the “Violence_Status” column. The Target was the “Violence_Status” column, while the Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
+- Preliminary data preprocessing: 
+  - With the question being a yes/no (violent/Non-Violent) based on weather, we knew that we were looking at predicting discrete outcomes. 
+  - Initial exploration of the data showed that there were several columns that were similar in description to each other (several types of location, etc.), so we dropped them to eliminate noise.
+- Preliminary feature engineering:
+    - For some of the columns that were in string format, pandas “get_dummies” was utilized to preprocess the data(these were later eliminated when the columns weren’t strong on feature importance and did not appear to be significant)
+    - Nan's were replaced with 0 (later clean up in the database eliminated the need)
+- Data was split based on the “Violence_Status” column:
+    - The Target was the “Violence_Status” column
+    - The Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
 - Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
 - Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
 
@@ -112,13 +118,17 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 4. Machine Learning model using Python/Jupyter Notebook/Sci-kit Learn
 5. Visualize ML output using Tableau or JavaScript
 
+## Dashboard Storyboard 
+
+<a target="_blank" href="https://docs.google.com/presentation/d/1g3GqBM35xMLTo6jP8FhdkAf1CYKovgrgu2nAPzJwjTI/edit#slide=id.g25f6af9dd6_0_0">Dashboard Storyboard on Google slides<a/>
+
 ## Preliminary Dashboard Link
 
-https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes
+<a target="_blank" href="https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes">Tableau Dashboard<a/>
 
 ## Link to Google Slides
 
-https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing
+<a target="_blank" href="https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing">Google Presentation Slides<a/>
 
 ## Roles and Members
 ### Circle Role - Austen Marden
