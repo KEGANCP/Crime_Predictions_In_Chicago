@@ -118,13 +118,17 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 4. Machine Learning model using Python/Jupyter Notebook/Sci-kit Learn
 5. Visualize ML output using Tableau or JavaScript
 
+## Dashboard Storyboard 
+
+<a target="_blank" href="https://docs.google.com/presentation/d/1g3GqBM35xMLTo6jP8FhdkAf1CYKovgrgu2nAPzJwjTI/edit#slide=id.g25f6af9dd6_0_0">Dashboard Storyboard on Google slides<a/>
+
 ## Preliminary Dashboard Link
 
-https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes
+<a target="_blank" href="https://public.tableau.com/app/profile/austen.marden/viz/chicago_crime_story_2/ChicagoCrimeDashboard?publish=yes">Tableau Dashboard<a/>
 
 ## Link to Google Slides
 
-https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing
+<a target="_blank" href="https://docs.google.com/presentation/d/1eTzayAK_KPfpSJd6vPzA7zdwXh-dtZpn5IW0fO2QbIA/edit?usp=sharing">Google Presentation Slides<a/>
 
 ## Roles and Members
 ### Circle Role - Austen Marden
