@@ -51,7 +51,7 @@ ERD:
 - Run the data_cleaner.ipynb notebook in order to clean the raw data files and load the SQL database.
   - Create a config.py file with your PostgreSQL password.
   - Change the read_CSV file pathways to match your file locations.
-- Run the chicago_crime_queries.sql file in PostgreSQL to create the joined table for futher analysis and machine learning.
+- Run the chicago_crime_queries.sql file in PostgreSQL to create the joined table for further analysis and machine learning.
 - For Machine Learning:
   - verify that your Python environment has sklearn loaded in it
   - make sure PostgreSQL is running and "chicago_crime" database is connected
@@ -76,17 +76,17 @@ Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboa
 Chicago Community Data - https://datahub.cmap.illinois.gov/dataset/community-data-snapshots-raw-data/resource/8c4e096e-c90c-4bef-9cf1-9028d094296e
 
 ## Preliminary Analysis
-Prior to utilzing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
+Prior to utilizing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Clean_Weather_Snip.png" alt="CleanWeather"/>
 </p>
 
-There was also optimization required for our crime data set. Seeing as how this data set was very large we began by dropping columns that would not be pertinent to our research. We also needed to identify "Violent Crimes" and "Non-Violent Crimes". This was achived with the code shown below:
+There was also optimization required for our crime data set. Seeing as how this data set was very large we began by dropping columns that would not be pertinent to our research. We also needed to identify "Violent Crimes" and "Non-Violent Crimes". This was archived with the code shown below:
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Violent_V_Nonviolent.png" alt="ViolentVsNonViolent"/>
 </p>
 
-The above mentioned data cleaning allowed for some preliminary Machine Learning model tests. The below is a sample of code showing our Confusion Matrix with an accuracy score of 65%. 
+The above-mentioned data cleaning allowed for some preliminary Machine Learning model tests. The below is a sample of code showing our Confusion Matrix with an accuracy score of 65%. 
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
