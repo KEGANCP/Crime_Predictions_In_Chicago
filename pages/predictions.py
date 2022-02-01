@@ -27,7 +27,7 @@ from datetime import datetime as dt
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 import joblib
-pipeline = joblib.load ('assets/feature_model.joblib')
+pipeline = joblib.load ('assets/model2.joblib')
 
 
 
@@ -262,11 +262,11 @@ def predict (Community_Area,
     output2 = daq.Gauge(id='my-daq-gauge',
                         showCurrentValue=True,
                         units="Crimes",
-                        max=1000,
+                        max=50,
                         value=y_pred,
-                        min=200,
-                        color={"gradient":True,"ranges":{"teal":[200,500],"blue":[500,700],"magenta":[700,1000]}},
-                        size=600)  
+                        min=0,
+                        color={"gradient":True,"ranges":{"teal":[0,20],"blue":[20,35],"magenta":[35,50]}},
+                        size=450)  
     return output1 , output2
 # @app.callback(
 #     dash.dependencies.Output('my-daq-gauge', 'value'),
