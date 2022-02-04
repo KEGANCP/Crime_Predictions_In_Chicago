@@ -103,6 +103,7 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
     - The Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
 - Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
 - Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
+- The Random Forest Classifier achieved an accuracy score of 65.5% when we ran our sample dataset.
 
 
 
