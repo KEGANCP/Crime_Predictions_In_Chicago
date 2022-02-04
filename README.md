@@ -8,6 +8,8 @@ Crime Predictions in Chicago based on specific weather conditions via Machine Le
 We have selected this topic to determine what correlation certain weather patterns have on violent crimes committed within Chicago. Our analysis could be useful for a wide range of purpose; from those seeking potential vacation travel to Chicago, to law enforcement better equipped to forecast violent crime within their precinct.
 This topic will allow the utilization of many data analytic tools and functions from optimizing data in Pandas and utilzing Python to initiate Machine Learning models, to providing vizualizations within Tableau & utilzing SQL to query against the database. 
 
+View our interactive dashboard(s) [here](https://chicagocrimepredictions.herokuapp.com)
+
 # Goal
 Our goal is to utilize Machine Learning to predict future crimes within Chicago based on specific weather conditions.
 In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
@@ -57,7 +59,23 @@ ERD:
   - make sure PostgreSQL is running and "chicago_crime" database is connected
   - open up "Random_Forest.ipynb" file in Jupyter Notebook 
   - click on "Kernel" tab and select "Restart & Run All"
-- INSERT DASHBOARD STEPS  
+- How to deploy Dash (by Plotly) via Heroku
+  - Tools needed to install
+    - Heroku
+    - Dash
+    - Dash-Bootstrap-Componenets
+    - Dash-daq
+    - Plotly  
+    - Gunicorn 
+    - Joblin
+    - Scikit-Learn
+  - app.py is required to initialize the Dash application.
+  - procfile with run.py is used to deploy the application.
+  - requirements.txt describes all Python dependencies to run the app successfully.
+  - Contents within "pages" folder are required for the layout of each page within the webpage.
+  - The predictions within our interactive dashboard are made possible by utilizing a machine learning algorithm saved via pipeline, and recalled within our prediction page.
+- Further details to deploy Dash [here](https://dash.plotly.com/deployment)
+
 - INSERT TABLEAU STEPS
 
 
