@@ -27,7 +27,7 @@ from datetime import datetime as dt
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 import joblib
-pipeline = joblib.load ('assets/feature_model.joblib')
+pipeline = joblib.load ('assets/model2.joblib')
 
 
 
@@ -61,7 +61,7 @@ column1 = dbc.Col(
         ),
             dcc.DatePickerSingle(
                 id='date-picker-single',
-                date=dt(2019, 1, 1),
+                date=dt(2023, 1, 1),
                 min_date_allowed=dt(2019, 1, 1),
                 max_date_allowed=dt(2030, 1, 19),
                 with_portal=True
@@ -262,11 +262,11 @@ def predict (Community_Area,
     output2 = daq.Gauge(id='my-daq-gauge',
                         showCurrentValue=True,
                         units="Crimes",
-                        max=1000,
+                        max=75,
                         value=y_pred,
-                        min=200,
-                        color={"gradient":True,"ranges":{"teal":[200,500],"blue":[500,700],"magenta":[700,1000]}},
-                        size=600)  
+                        min=0,
+                        color={"gradient":True,"ranges":{"teal":[0,20],"blue":[20,55],"magenta":[55,75]}},
+                        size=350)  
     return output1 , output2
 # @app.callback(
 #     dash.dependencies.Output('my-daq-gauge', 'value'),

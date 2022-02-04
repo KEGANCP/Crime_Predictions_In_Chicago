@@ -15,11 +15,27 @@ column1 = dbc.Col(
             """
         
             ## GitHub
-            Get more details from our repo at http://https://github.com/KEGANCP/Crime_Predictions_In_Chicago
+            Get more details on our Crime Prediction process within our GitHub.
             """
         ),
 
     ],
 )
 
-layout = dbc.Row([column1])
+column2 = dbc.Container(
+    dbc.Row(
+        dbc.Col(
+            html.P(
+                [
+                    html.Span('View our process here!', className='mr-2'), 
+                    html.A(html.Button('GitHub', className='three columns'),
+                        href='https://github.com/KEGANCP/Crime_Predictions_In_Chicago')
+                ], 
+                className='row'
+               
+            )
+        )
+    )
+)
+
+layout = dbc.Row([column1, column2])
