@@ -61,7 +61,7 @@ column1 = dbc.Col(
         ),
             dcc.DatePickerSingle(
                 id='date-picker-single',
-                date=dt(2019, 1, 1),
+                date=dt(2023, 1, 1),
                 min_date_allowed=dt(2019, 1, 1),
                 max_date_allowed=dt(2030, 1, 19),
                 with_portal=True
@@ -262,11 +262,11 @@ def predict (Community_Area,
     output2 = daq.Gauge(id='my-daq-gauge',
                         showCurrentValue=True,
                         units="Crimes",
-                        max=50,
+                        max=75,
                         value=y_pred,
                         min=0,
-                        color={"gradient":True,"ranges":{"teal":[0,20],"blue":[20,35],"magenta":[35,50]}},
-                        size=450)  
+                        color={"gradient":True,"ranges":{"teal":[0,20],"blue":[20,55],"magenta":[55,75]}},
+                        size=350)  
     return output1 , output2
 # @app.callback(
 #     dash.dependencies.Output('my-daq-gauge', 'value'),
