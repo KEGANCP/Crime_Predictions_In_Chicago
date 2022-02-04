@@ -114,8 +114,18 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
 - Data was split based on the “Violence_Status” column:
     - The Target was the “Violence_Status” column
     - The Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
-- Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
+- Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.Random Forest is fast and can show feature importances. However, the predictions it makes are always in the range of the training set.
 - Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
+- Explanation of changes in model choice 
+  - The Random Forest Classifier achieved an accuracy score of 65.5% when we ran our sample dataset.
+  - Once connected to the database and running on our 3-year dataset, the accuracy dropped to 62.8%.
+  - Several attempts were made to try to adjust the model to attain a higher accuracy rate. The estimators were raised to 300, which only had a minimal effect (63.24%)
+  - Ultimately our model did not attain our goal of 75%, which was disappointing. The dataset did not allow any closer association between the weather and the violence status. We would not want to predict whether a crime would be violent or not with so low an accuracy.
+  - Looking back at our questions, the third question stood out when looking back at the data, “Can we predict the number of crimes based on the community and weather?”. With a crime count being a continuous target, we switched our model to the Random Forest Regressor 
+- Description of model training
+  - This model was trained on
+- Description of current Accuracy Score
+  - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, above our 75% goal for predictions.
 
 ---
 
