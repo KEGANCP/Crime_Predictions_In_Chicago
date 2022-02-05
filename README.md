@@ -138,9 +138,11 @@ Additional exploration of the dataset using Tableau was used to get a better pic
   - Ultimately our model did not attain our goal of 75%, which was disappointing. The dataset did not allow any closer association between the weather and the violence status. We would not want to predict whether a crime would be violent or not with so low an accuracy.
   - Looking back at our questions, the third question stood out when looking back at the data, “Can we predict the number of crimes based on the community and weather?”. With a crime count being a continuous target, we switched our model to the Random Forest Regressor 
 - Description of model training
-  - This model was trained on
+  - This model was trained with
+    - a new target of "Crimes_per_day" 
+    - the features of Community Area, Average Teperature, Month, Day, and Weekday
 - Description of current Accuracy Score
-  - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, above our 75% goal for predictions.
+  - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, well above our 75% goal for predictions.
 
 ---
 
