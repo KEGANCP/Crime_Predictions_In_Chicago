@@ -14,13 +14,6 @@ Our goal is to utilize Machine Learning to predict future crimes within Chicago 
 In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
 
 
-ERD:
-<p align="center">
-  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/crime_database_erd.png" alt="ERD"/>
-</p>
-
-
-
 -----
 
 ## Instructions
@@ -33,7 +26,11 @@ ERD:
   - SQAlchemy
   - Sci-Kit Learn
   - Dash
+  - Dash-Bootstrap-Components
+  - Dash-daq
   - Plotly
+  - Gunicorn 
+  - Joblin
 - PostgreSQL
 - Tableau
 
@@ -54,22 +51,13 @@ ERD:
   - open up "Random_Forest.ipynb" file in Jupyter Notebook 
   - click on "Kernel" tab and select "Restart & Run All"
 - How to deploy Dash (by Plotly) via Heroku
-  - Tools needed to install
-    - Heroku
-    - Dash
-    - Dash-Bootstrap-Componenets
-    - Dash-daq
-    - Plotly  
-    - Gunicorn 
-    - Joblin
-    - Scikit-Learn
   - app.py is required to initialize the Dash application.
   - procfile with run.py is used to deploy the application.
   - requirements.txt describes all Python dependencies to run the app successfully.
   - Contents within "pages" folder are required for the layout of each page within the webpage.
   - The predictions within our interactive dashboard are made possible by utilizing a machine learning algorithm saved via pipeline, and recalled within our prediction page.
 - Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
-
+- WHAT .PY FILE NEEDS TO BE RUN IN ORDER TO DEPLOY THE DASHBOARD?
 -----
 
 ## Datasets
@@ -84,23 +72,50 @@ Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboa
 
 Chicago Community Data - https://datahub.cmap.illinois.gov/dataset/community-data-snapshots-raw-data/resource/8c4e096e-c90c-4bef-9cf1-9028d094296e
 
----
 
-## Preliminary Analysis
-Prior to utilizing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
+---
+## ETL & Database Creation
+
+Using the data_cleaner notebook, all datasets required cleanup prior to analysis. the weather data was cleaned to provide only the pertinent columns, Crime data bucketed by violence status and community data trimmed down to a reference table. Below are samples of code utilized in order get to our clean dataset.
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Clean_Weather_Snip.png" alt="CleanWeather"/>
 </p>
 
-There was also optimization required for our crime data set. Seeing as how this data set was very large we began by dropping columns that would not be pertinent to our research. We also needed to identify "Violent Crimes" and "Non-Violent Crimes". This was archived with the code shown below:
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Violent_V_Nonviolent.png" alt="ViolentVsNonViolent"/>
 </p>
+
+Once the data was cleaned, we used SQAlchemy to connect our cleaned dataframes directly to our SQL database in Postgres. Once all of our tables were loaded into SQL they were joined using the query file to create a master table used for analysis and our machine learning algorithms.
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/data_to_sql.png" alt="SQLConnection"/>
+</p>
+
+ERD:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/crime_database_erd.png" alt="ERD"/>
+</p>
+
+Join Query:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/sql_query.png" alt="SQLQuery"/>
+</p>
+
+---
+
+## Preliminary Analysis
+
 
 The above-mentioned data cleaning allowed for some preliminary Machine Learning model tests. The below is a sample of code showing our Confusion Matrix with an accuracy score of 65%. 
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
+
+Additional exploration of the dataset using Tableau was used to get a better picture of our information and A preliminary dashboard was created to also visualize our findings.
+
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/images%20for%20slides/prelim_tableau.jpg" alt="prelim"/>
+</p>
+
 
 ---
 
