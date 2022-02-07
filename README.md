@@ -67,7 +67,10 @@ ERD:
      - Our app will deploy with the following files: app.py, run.py, requirements.txt, and procfile.
      - Access your local project file via terminal.
      - Utilize the following steps to initialize our deploy via Heroku.
-     - 
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/deploy.png" alt="deploy"/>
+</p>
+     - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name.
 - Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
 
 -----
