@@ -70,7 +70,7 @@ ERD:
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/deploy.png" alt="deploy"/>
 </p>
-     - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
+     - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. Further details to deploy Dash [here](https://dash.plotly.com/deployment)
 
 -----
 
