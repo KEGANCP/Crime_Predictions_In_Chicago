@@ -169,6 +169,9 @@ Additional exploration of the dataset using Tableau was used to get a better pic
 - Description of current Accuracy Score
   - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, well above our 75% goal for predictions.
 
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/mape.png" alt="mape"/>
+</p>
 ----
 
 ## Dash via Plotly
