@@ -51,6 +51,25 @@ In order to generate the desired findings we will be using the below datasets to
   - open up "Random_Forest.ipynb" file in Jupyter Notebook 
   - click on "Kernel" tab and select "Restart & Run All"
 - How to deploy Dash (by Plotly) via Heroku
+  - Tools needed to install
+    - Heroku
+    - Dash
+    - Dash-Bootstrap-Componenets
+    - Dash-daq
+    - Plotly  
+    - Gunicorn 
+    - Joblib
+    - Scikit-Learn
+  - Once all our app's dependencies are installed the below steps outline how to deploy our app remotely.
+     - Our app will deploy with the following files: app.py, run.py, requirements.txt, and procfile.
+     - Access your local project file via terminal.
+     - Utilize the following steps to initialize our deploy via Heroku.
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/deploy.png" alt="deploy"/>
+</p>
+     - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. Further details to deploy Dash [here](https://dash.plotly.com/deployment)
+
+=======
   - app.py is required to initialize the Dash application.
   - procfile with run.py is used to deploy the application.
   - requirements.txt describes all Python dependencies to run the app successfully.
@@ -58,6 +77,7 @@ In order to generate the desired findings we will be using the below datasets to
   - The predictions within our interactive dashboard are made possible by utilizing a machine learning algorithm saved via pipeline, and recalled within our prediction page.
 - Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
 - WHAT .PY FILE NEEDS TO BE RUN IN ORDER TO DEPLOY THE DASHBOARD?
+
 -----
 
 ## Datasets
@@ -110,6 +130,9 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
 
+
+----
+=======
 Additional exploration of the dataset using Tableau was used to get a better picture of our information and A preliminary dashboard was created to also visualize our findings.
 
 <p align="center">
@@ -118,6 +141,7 @@ Additional exploration of the dataset using Tableau was used to get a better pic
 
 
 ---
+
 
 ## Machine Learning
 - Preliminary data preprocessing: 
@@ -144,6 +168,22 @@ Additional exploration of the dataset using Tableau was used to get a better pic
 - Description of current Accuracy Score
   - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, well above our 75% goal for predictions.
 
+----
+
+## Dash via Plotly
+- We utilized Dash libraries to create our interactive dashboard.
+  - In order to preform our predictions we first needed to generate a machine learning algorithm, which can be viewed within our predictions.ipynb file. After testing and confirming our accuracy we utilize "make_pipeline" via "sklearn", to generate our pipeline which will be utilized to generate our dashboards predictions.
+Features generated with Dash:
+  - Utilizing the "NavBar" a user can toggle between the homepage, Predictions, GitHub, and Tableau. 
+  - Making use of the footer within run.py we've added each member of the teams direct links to their respective Linkedin, to appear on each page.
+  - Within the "Pages" folder is the layout for each page.
+    - Employing the "Button" within "index.py" feature we created a button to direct the user to our predictions page. This "Button" feature was also utilized within our "GitHub" page to navigate the user directly to this GitHub repo.
+    - We made use of an image as a direct hyperlink to our interactive Tableau dashboard for further visual analysis within our "Tableau" page.
+    - Within our "predictions" page we loaded our previously created pipeline via Joblib. We utilized "Date Picker", "Dropdown", and a "Slider" as our interactive features to select a date, neighborhood, and temperature to predict crimes from. As selections are made a "Gauge" was generated to provide a visual of the predicted crime total via the "Callback" feature. The below image is a sample of code used to generate our predictions via the gauge.
+
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/gauge.png" alt="gauge"/>
+</p>
 ---
 
 ## Dashboard Storyboard 
