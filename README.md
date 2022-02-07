@@ -14,13 +14,6 @@ Our goal is to utilize Machine Learning to predict future crimes within Chicago 
 In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
 
 
-ERD:
-<p align="center">
-  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/crime_database_erd.png" alt="ERD"/>
-</p>
-
-
-
 -----
 
 ## Instructions
@@ -33,7 +26,11 @@ ERD:
   - SQAlchemy
   - Sci-Kit Learn
   - Dash
+  - Dash-Bootstrap-Components
+  - Dash-daq
   - Plotly
+  - Gunicorn 
+  - Joblin
 - PostgreSQL
 - Tableau
 
@@ -72,6 +69,15 @@ ERD:
 </p>
      - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. Further details to deploy Dash [here](https://dash.plotly.com/deployment)
 
+=======
+  - app.py is required to initialize the Dash application.
+  - procfile with run.py is used to deploy the application.
+  - requirements.txt describes all Python dependencies to run the app successfully.
+  - Contents within "pages" folder are required for the layout of each page within the webpage.
+  - The predictions within our interactive dashboard are made possible by utilizing a machine learning algorithm saved via pipeline, and recalled within our prediction page.
+- Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
+- WHAT .PY FILE NEEDS TO BE RUN IN ORDER TO DEPLOY THE DASHBOARD?
+
 -----
 
 ## Datasets
@@ -86,25 +92,56 @@ Used to classify violent crimes - https://chicagopd.maps.arcgis.com/apps/dashboa
 
 Chicago Community Data - https://datahub.cmap.illinois.gov/dataset/community-data-snapshots-raw-data/resource/8c4e096e-c90c-4bef-9cf1-9028d094296e
 
----
 
-## Preliminary Analysis
-Prior to utilizing the weather data, it was first cleaned to provide only the pertinent columns necessary for the initial analysis. Below is a sample of code utilized to drop columns in order get to our clean dataset.
+---
+## ETL & Database Creation
+
+Using the data_cleaner notebook, all datasets required cleanup prior to analysis. the weather data was cleaned to provide only the pertinent columns, Crime data bucketed by violence status and community data trimmed down to a reference table. Below are samples of code utilized in order get to our clean dataset.
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Clean_Weather_Snip.png" alt="CleanWeather"/>
 </p>
 
-There was also optimization required for our crime data set. Seeing as how this data set was very large we began by dropping columns that would not be pertinent to our research. We also needed to identify "Violent Crimes" and "Non-Violent Crimes". This was archived with the code shown below:
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/Violent_V_Nonviolent.png" alt="ViolentVsNonViolent"/>
 </p>
+
+Once the data was cleaned, we used SQAlchemy to connect our cleaned dataframes directly to our SQL database in Postgres. Once all of our tables were loaded into SQL they were joined using the query file to create a master table used for analysis and our machine learning algorithms.
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/data_to_sql.png" alt="SQLConnection"/>
+</p>
+
+ERD:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/AustenM/data/crime_database_erd.png" alt="ERD"/>
+</p>
+
+Join Query:
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/sql_query.png" alt="SQLQuery"/>
+</p>
+
+---
+
+## Preliminary Analysis
+
 
 The above-mentioned data cleaning allowed for some preliminary Machine Learning model tests. The below is a sample of code showing our Confusion Matrix with an accuracy score of 65%. 
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
 
+
 ----
+=======
+Additional exploration of the dataset using Tableau was used to get a better picture of our information and A preliminary dashboard was created to also visualize our findings.
+
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/images%20for%20slides/prelim_tableau.jpg" alt="prelim"/>
+</p>
+
+
+---
+
 
 ## Machine Learning
 - Preliminary data preprocessing: 
@@ -116,8 +153,20 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
 - Data was split based on the “Violence_Status” column:
     - The Target was the “Violence_Status” column
     - The Features were narrowed down by their feature importance and are “Community_Area”, “Average_Wind_Speed”, “ Average_Temperature”, “Fog_Ice_Freezing_Fog”, “Smoke_or_Haze”
-- Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
+- Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.Random Forest is fast and can show feature importances. However, the predictions it makes are always in the range of the training set.
 - Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
+- Explanation of changes in model choice 
+  - The Random Forest Classifier achieved an accuracy score of 65.5% when we ran our sample dataset.
+  - Once connected to the database and running on our 3-year dataset, the accuracy dropped to 62.8%.
+  - Several attempts were made to try to adjust the model to attain a higher accuracy rate. The estimators were raised to 300, which only had a minimal effect (63.24%)
+  - Ultimately our model did not attain our goal of 75%, which was disappointing. The dataset did not allow any closer association between the weather and the violence status. We would not want to predict whether a crime would be violent or not with so low an accuracy.
+  - Looking back at our questions, the third question stood out when looking back at the data, “Can we predict the number of crimes based on the community and weather?”. With a crime count being a continuous target, we switched our model to the Random Forest Regressor 
+- Description of model training
+  - This model was trained with
+    - a new target of "Crimes_per_day" 
+    - the features of Community Area, Average Teperature, Month, Day, and Weekday
+- Description of current Accuracy Score
+  - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, well above our 75% goal for predictions.
 
 ----
 
