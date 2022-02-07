@@ -67,7 +67,8 @@ In order to generate the desired findings we will be using the below datasets to
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/deploy.png" alt="deploy"/>
 </p>
-     - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. Further details to deploy Dash [here](https://dash.plotly.com/deployment)
+
+     - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. 
 
 =======
   - app.py is required to initialize the Dash application.
@@ -76,7 +77,7 @@ In order to generate the desired findings we will be using the below datasets to
   - Contents within "pages" folder are required for the layout of each page within the webpage.
   - The predictions within our interactive dashboard are made possible by utilizing a machine learning algorithm saved via pipeline, and recalled within our prediction page.
 - Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
-- WHAT .PY FILE NEEDS TO BE RUN IN ORDER TO DEPLOY THE DASHBOARD?
+
 
 -----
 
