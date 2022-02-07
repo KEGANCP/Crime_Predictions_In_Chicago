@@ -104,7 +104,7 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/main/Resources/CM.png" alt="CM"/>
 </p>
 
----
+----
 
 ## Machine Learning
 - Preliminary data preprocessing: 
@@ -119,7 +119,7 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
 - Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
 - Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
 
----
+----
 
 ## Dash via Plotly
 - We utilized Dash libraries to create our interactive dashboard.
