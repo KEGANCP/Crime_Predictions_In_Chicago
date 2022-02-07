@@ -61,7 +61,7 @@ ERD:
     - Dash-daq
     - Plotly  
     - Gunicorn 
-    - Joblin
+    - Joblib
     - Scikit-Learn
   - Once all our app's dependencies are installed the below steps outline how to deploy our app remotely.
      - Our app will deploy with the following files: app.py, run.py, requirements.txt, and procfile.
@@ -119,6 +119,22 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
 - Model choice:  After an exploration of Logistic Regression, which predicted everything as violent, we switched gears and tried a decision tree model to sort through the features.When we plugged in the Random Forest Classifier, which runs efficiently on larger datasets like ours, we had much better results.
 - Accuracy goal was 75% to be moderately certain of our prediction (more than just a guess)
 
+---
+
+## Dash via Plotly
+- We utilized Dash libraries to create our interactive dashboard.
+  - In order to preform our predictions we first needed to generate a machine learning algorithm, which can be viewed within our predictions.ipynb file. After testing and confirming our accuracy we utilize "make_pipeline" via "sklearn", to generate our pipeline which will be utilized to generate our dashboards predictions.
+Features generated with Dash:
+  - Utilizing the "NavBar" a user can toggle between the homepage, Predictions, GitHub, and Tableau. 
+  - Making use of the footer within run.py we've added each member of the teams direct links to their respective Linkedin, to appear on each page.
+  - Within the "Pages" folder is the layout for each page.
+    - Employing the "Button" within "index.py" feature we created a button to direct the user to our predictions page. This "Button" feature was also utilized within our "GitHub" page to navigate the user directly to this GitHub repo.
+    - We made use of an image as a direct hyperlink to our interactive Tableau dashboard for further visual analysis within our "Tableau" page.
+    - Within our "predictions" page we loaded our previously created pipeline via Joblib. We utilized "Date Picker", "Dropdown", and a "Slider" as our interactive features to select a date, neighborhood, and temperature to predict crimes from. As selections are made a "Gauge" was generated to provide a visual of the predicted crime total via the "Callback" feature. The below image is a sample of code used to generate our predictions via the gauge.
+
+<p align="center">
+  <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/gauge.png" alt="gauge"/>
+</p>
 ---
 
 ## Dashboard Storyboard 
