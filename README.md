@@ -63,11 +63,11 @@ ERD:
     - Gunicorn 
     - Joblin
     - Scikit-Learn
-  - app.py is required to initialize the Dash application.
-  - procfile with run.py is used to deploy the application.
-  - requirements.txt describes all Python dependencies to run the app successfully.
-  - Contents within "pages" folder are required for the layout of each page within the webpage.
-  - The predictions within our interactive dashboard are made possible by utilizing a machine learning algorithm saved via pipeline, and recalled within our prediction page.
+  - Once all our app's dependencies are installed the below steps outline how to deploy our app remotely.
+     - Our app will deploy with the following files: app.py, run.py, requirements.txt, and procfile.
+     - Access your local project file via terminal.
+     - Utilize the following steps to initialize our deploy via Heroku.
+     - 
 - Further details to deploy Dash [here](https://dash.plotly.com/deployment) 
 
 -----
