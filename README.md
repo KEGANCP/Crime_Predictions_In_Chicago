@@ -201,6 +201,8 @@ Features generated with Dash:
   - Can we predict the number of crimes based on the community area and weather?
     - Based on an 86.87% accuracy on the machine learning model, we feel confident enough that the predictions are accurate enough to say yes.
 
+---
+
 ## Dashboard Storyboard 
 
 <a target="_blank" href="https://docs.google.com/presentation/d/1g3GqBM35xMLTo6jP8FhdkAf1CYKovgrgu2nAPzJwjTI/edit#slide=id.g25f6af9dd6_0_0">Dashboard Storyboard on Google slides<a/>
