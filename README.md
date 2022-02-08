@@ -133,7 +133,7 @@ The above-mentioned data cleaning allowed for some preliminary Machine Learning 
 
 
 ----
-=======
+
 Additional exploration of the dataset using Tableau was used to get a better picture of our information and A preliminary dashboard was created to also visualize our findings.
 
 <p align="center">
