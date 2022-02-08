@@ -189,6 +189,7 @@ Features generated with Dash:
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/gauge.png" alt="gauge"/>
 </p>
+
 ---
 
 ## Dashboard Storyboard 
