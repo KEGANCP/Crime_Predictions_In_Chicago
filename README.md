@@ -30,7 +30,7 @@ In order to generate the desired findings we will be using the below datasets to
   - Dash-daq
   - Plotly
   - Gunicorn 
-  - Joblin
+  - Joblib
 - PostgreSQL
 - Tableau
 
