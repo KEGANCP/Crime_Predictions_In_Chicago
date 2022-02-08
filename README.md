@@ -112,7 +112,7 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 - Description of model training
   - This model was trained with
     - a new target of "Crimes_per_day" 
-    - the features of Community Area, Average Teperature, Month, Day, and Weekday
+    - the features of Community Area, Average Temperature, Month, Day, and Weekday
 - Description of current Accuracy Score
   - Regression models do not use accuracy like classification models. Instead different metrics are computed, we used the MAPE(Mean Absolute Percentage Error) to calculate the accuracy. This ended up being 86.87%, well above our 75% goal for predictions.
 
@@ -129,6 +129,15 @@ The above mentioned data cleaning allowed for some preliminary Machine Learning 
 3. Database creation using SQL
 4. Machine Learning model using Python/Jupyter Notebook/Sci-kit Learn
 5. Visualize ML output using Tableau or JavaScript
+
+# Conclusions
+- There was not enough correlation in the data to prove our hypothesis and positively answer the first question.
+- There was enough correlation to create a viable machine learning model to predict the number of crimes given the community area, average temperature, day, month, and weekday
+- With that, we could answer the last two questions:
+  - Does weather affect crime rates?
+    - Based on our exploration of the data, there would appear to be enough correlation between the weather and crime rates to say it does.
+  - Can we predict the number of crimes based on the community area and weather?
+    - Based on an 86.87% accuracy on the machine learning model, we feel confident enough that the predictions are accurate enough to say yes.
 
 ## Dashboard Storyboard 
 
