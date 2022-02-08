@@ -210,12 +210,12 @@ Features generated with Dash:
  -  Github Link: https://github.com/austenmarden
  -  LinkedIn: https://www.linkedin.com/in/austen-marden/
 
-### Dashboard Technician & Repo Management - Kegan Propster
+### Machine Learning Algorithms and Presentation - Sean Farr
 
  -  Github Link: https://github.com/SeanTFarr
  -  LinkedIn: https://www.linkedin.com/in/sean-farr-462171135/
 
-### Machine Learning Algorithms and Presentation - Sean Farr
-
+### Dashboard Technician & Repo Management - Kegan Propster
+  
  -  Github Link: https://github.com/KEGANCP
  -  LinkedIn: https://www.linkedin.com/in/kegan-propster/
