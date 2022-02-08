@@ -70,7 +70,7 @@ In order to generate the desired findings we will be using the below datasets to
 
      - Once pushed you can view our dashboard at https://my-dash-app.herokuapp.com (changing "my-dash-app" to the previously created unique name. 
 
-=======
+
   - app.py is required to initialize the Dash application.
   - procfile with run.py is used to deploy the application.
   - requirements.txt describes all Python dependencies to run the app successfully.
