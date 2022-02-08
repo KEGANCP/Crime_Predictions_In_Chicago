@@ -172,7 +172,8 @@ Additional exploration of the dataset using Tableau was used to get a better pic
 <p align="center">
   <img src="https://github.com/KEGANCP/Crime_Predictions_In_Chicago/blob/KeganDash/Resources/mape.png" alt="mape"/>
 </p>
-----
+
+---
 
 ## Dash via Plotly
 - We utilized Dash libraries to create our interactive dashboard.
