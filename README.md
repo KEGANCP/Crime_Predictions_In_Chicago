@@ -11,7 +11,6 @@ This topic will allow the utilization of many data analytic tools and functions 
 View our interactive dashboard(s) [here](https://chicagocrimepredictions.herokuapp.com)
 
 Our goal is to utilize Machine Learning to predict future crimes within Chicago based on specific weather conditions.
-In order to generate the desired findings we will be using the below datasets to analyze and test through different machine learning methods.
 
 
 -----
@@ -82,6 +81,7 @@ In order to generate the desired findings we will be using the below datasets to
 -----
 
 ## Datasets
+In order to generate the desired findings we will be using the datasets below to clean, join, analyze, and test through different machine learning methods.
 
 City of Chicago Crime - https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
 
